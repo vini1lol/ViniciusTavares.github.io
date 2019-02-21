@@ -12,9 +12,8 @@
     <img src="eu.jpg" alt="Italian Trulli">
     </a>
     <h2>Formação:</h2>
-    <p>Técnico em Mecatrônica
-       Técnico em Automação Industrial
-    </p>
+    <p>Técnico em Mecatrônica</p>
+    <p>Técnico em Automação Industrial</p>
     
   </body>
 </html>
