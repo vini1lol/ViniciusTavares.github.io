@@ -10,6 +10,7 @@
     <p>Essa é minha pagina atual</p>
     <a href=" http://lattes.cnpq.br/9894478796922587">
     <img src="eu.jpg" alt="Italian Trulli">
+      <p>lattes</p>
     </a>
     
     
