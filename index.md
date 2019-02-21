@@ -14,6 +14,7 @@
     <h2>Formação:</h2>
     <p>Técnico em Mecatrônica</p>
     <p>Técnico em Automação Industrial</p>
-    
+    <h3>Experiência profissional:</h3>
+    <p>Operador de maquinas CNC na Sincular Impalnts - junho/2017 - novembro/2018</p>
   </body>
 </html>
