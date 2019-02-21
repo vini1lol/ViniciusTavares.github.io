@@ -10,9 +10,11 @@
     <p>Essa é minha pagina atual</p>
     <a href=" http://lattes.cnpq.br/9894478796922587">
     <img src="eu.jpg" alt="Italian Trulli">
-      <p>lattes</p>
     </a>
-    
+    <h2>Formação:</h2>
+    <p>Técnico em Mecatrônica
+       Técnico em Automação Industrial
+    </p>
     
   </body>
 </html>
