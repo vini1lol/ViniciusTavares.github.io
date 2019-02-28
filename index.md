@@ -1,7 +1,10 @@
 
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
   <head>
     <title>Vinicius Tavares</title>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="pag.css"/>
   </head>
   <body>
     <h1>
@@ -11,16 +14,20 @@
     <img src="eu.jpg" alt="Italian Trulli">
     </a>
     <h2>Formação:</h2>
-    <p>Técnico em Mecatrônica</p>
-    <p>Técnico em Automação Industrial</p>
+    <ul id="formacao">
+      <li>Técnico em Mecatrônica</li>
+      <li>Técnico em Automação Industrial</li>
+    </ul>
     <h3>Experiência profissional:</h3>
     <p>Operador de maquinas CNC na Sincular Impalnts - junho/2017 - novembro/2018</p>
     <h4>Outras habilidades:</h4>
-    <p>Java</p>
-    <p>C++</p>
-    <!--<p>python</p>
-    <p>html</p>-->
-    <p>C</p>
-    <p>ladder</p>
+    <ul id="habilidades">
+      <li>Java</li>
+      <li>C++</li>
+      <li>python</li>
+      <li>html</li>
+      <li>C</li>
+      <li>ladder</li>
+    </ul>
   </body>
 </html>
