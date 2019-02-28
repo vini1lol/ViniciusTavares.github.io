@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body{
+  background-color: #dddddd;
+  color: rgba(0,0,0,1);
+}
+div#linkes{
+  background-color: #ffffff;
+  margin: -20px auto 0px auto;
+  width: 900px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  padding: 10px;
+}
+ul#voltar{
+  list-style: none;
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 1000px;
+}
+ul#voltar li{
+  text-decoration: none;
+  opacity: 0.5;
+  display: inline-block;
+  background-color: #dddddd;
+  padding: 10px;
+  margin: 2px;
+  transition: opacity 1s;
+}
+ul#voltar li:hover{
+  background-color: #606060;
+  opacity: 1;
+  transition: background-color 1s;
+}
+ul#voltar a{
+  color: black;
+  text-decoration: none;
+}
+ul#voltar a:hover{
+  color: white;
+}
+ul#amigos{
+    list-style: none;
+}
+ul#amigos li{
+    text-decoration: none;
+    padding: 10px;
+    margin: 2px;
+}
+ul#amigos a{
+    color: black;
+    text-decoration: none;
+}
+ul#amigos a:hover{
+    color: black;
+    text-decoration: underline;
+}

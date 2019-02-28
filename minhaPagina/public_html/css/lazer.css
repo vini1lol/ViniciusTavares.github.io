@@ -1,0 +1,45 @@
+@charset "UTF-8";
+body{
+  background-color: #dddddd;
+  color: rgba(0,0,0,1);
+}
+div#lazer{
+  background-color: #ffffff;
+  margin: -20px auto 0px auto;
+  width: 900px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  padding: 10px;
+}
+h1{
+    font-family: Arial,sans-serif;
+    text-align: center;
+    font-size: 20pt;
+}
+ul#voltar{
+  list-style: none;
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 1000px;
+}
+ul#voltar li{
+  text-decoration: none;
+  opacity: 0.5;
+  display: inline-block;
+  background-color: #dddddd;
+  padding: 10px;
+  margin: 2px;
+  transition: opacity 1s;
+}
+ul#voltar li:hover{
+  background-color: #606060;
+  opacity: 1;
+  transition: background-color 1s;
+}
+ul#voltar a{
+  color: black;
+  text-decoration: none;
+}
+ul#voltar a:hover{
+  color: white;
+}
