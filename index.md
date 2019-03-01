@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="pt-br">
   <head>
     <title>Vinicius Tavares</title>
