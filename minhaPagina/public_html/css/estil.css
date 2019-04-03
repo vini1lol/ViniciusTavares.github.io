@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+body{
+  background-color: #dddddd;
+  color: rgba(0,0,0,1);
+}
+div#interface{
+  background-color: #ffffff;
+  margin: -20px auto 0px auto;
+  width: 900px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  padding: 10px;
+}
+hgroup#cabecalho{
+  border-bottom: 1px solid #606060;
+  height: 100px;
+  background: url("../imagens/eu-menor.jpg") no-repeat;
+}
+hgroup#cabecalho h2{
+  color: #888888;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: background;
+}
+h1{
+  text-align: center;
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 28pt;
+  color: #606060;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+h2{
+  text-align: left;
+  font-family: Arial;
+  font-size: 15pt;
+  color: black;
+}
+h2#sub{
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15pt;
+  color: black;
+}
+p{
+  text-align: justify;
+  text-indent: 50px;
+  font-family: Arial;
+  font-size: 15pt; 
+  color: black;
+}
+footer{
+    border-top: 1px solid #606060;
+}
+footer p{
+  font-size: 12pt;
+  text-align: center;
+  font-family: times-newroman;
+}
+figure.minhafoto img{
+  border: 8px solid white;
+  box-shadow: 2px 2px 4px black;
+  width: 10%;
+  height: 30%;
+  position: relative;
+  top: -100px;
+  left: 10px;
+}
+ul#linkes{
+  list-style: none;
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 850px;
+}
+ul#linkes li{
+  text-decoration: none;
+  opacity: 0.5;
+  display: inline-block;
+  background-color: #dddddd;
+  padding: 10px;
+  margin: 2px;
+  transition: opacity 1s;
+}
+ul#linkes li:hover{
+  background-color: #606060;
+  opacity: 1;
+  transition: background-color 1s;
+}
+ul#linkes a{
+  color: black;
+  text-decoration: none;
+}
+ul#linkes a:hover{
+  color: white;
+}
+ul#habilidades{
+  text-align:left;
+}
+ul#habilidades li{
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+ul#habilidades li:hover{
+  font-size: 15pt;
+  opacity: 1;
+}
+ul#idioma{
+  list-style: square;
+}
+
+

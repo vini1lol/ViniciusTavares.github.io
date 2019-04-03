@@ -15,20 +15,21 @@ table{
     padding: 10px;
     margin: 2px;
     border: 2px black solid;
+    border-spacing: 0px;
 }
 table thead tr th{
-    font-family: Arial,sans-serif;
-    background-color: #888888;
+    color: white;
+    font-family: Times New Roman,sans-serif;
+    font-size: 17pt;
+    background-color: #606060;
     padding: 10px;
-    margin: 2px;
-    border: 2px black solid;
+    border: 1px black solid;
 }
 table tbody tr td{
     font-family: Arial,sans-serif;
     background-color: #888888;
     padding: 10px;
-    margin: 2px;
-    border: 2px black solid;
+    border: 1px black solid;
 }
 ul#voltar{
   list-style: none;

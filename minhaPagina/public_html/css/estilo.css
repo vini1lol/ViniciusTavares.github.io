@@ -1,21 +1,107 @@
 @charset "UTF-8";
-body{
-  background-color: #dddddd;
-  color: rgba(0,0,0,1);
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+* {
+  box-sizing: border-box;
+}
+#sim{
+    position: relative;
+    left: 100px;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+    div#img{
+        width: 100px;
+        float: left;
+    }
+    div#img img{
+        width: 100px;
+    }
+    div#corpo{
+        padding: 0px;
+        width: 750px;
+        float: right;
+        top: -100px;
+    }
+    div#interface{
+        background-color: #ffffff;
+        margin: -10px auto 0px auto;
+        width: 900px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 768px){
+[class*="col-"]{ 
+  width: 100%;
+}
+div#corpo{
+    width: 300px;
+    float: bottom;
+    border-bottom: 1px solid #606060;
+}
+div#corpo h1{
+    text-align: left;
+}
+div#corpo h2{
+    text-align: left;
+}
+span#midnam{
+    display: none;
+}
+div#img{
+    float: top;
+    width: 200px;
+}
+div#img img{
+    width: 300px;
 }
 div#interface{
-  background-color: #ffffff;
-  margin: -20px auto 0px auto;
-  width: 900px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-  padding: 10px;
+    background-color: #ffffff;
+    margin: -10px auto 10px auto;
+    width: 360px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 10px;
 }
-hgroup#cabecalho{
-  border-bottom: 1px black solid;
-  height: 100px;
-  background: url("../imagens/eu-menor.jpg") no-repeat;
+ul#exp li{
+    width: 300px;
 }
-hgroup#cabecalho h2{
+
+}
+body{
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+}
+div#corpo h2{
   color: #888888;
 }
 a{
@@ -23,25 +109,25 @@ a{
   text-decoration: none;
 }
 a:hover{
-  text-decoration: underline;
-  color: blue;
+  color: background;
 }
 h1{
   text-align: center;
-  font-family: Arial;
+  font-family: 'Bubblegum Sans', cursive;
   font-size: 28pt;
   color: #606060;
   text-shadow: 1px 1px 1px rgba(0,0,0,.6);
 }
 h2{
-  text-align: left;
-  font-family: Arial;
-  font-size: 15pt;
-  color: black;
+    clear: both;
+    text-align: left;
+    font-family: Arial;
+    font-size: 15pt;
+    color: black;
 }
 h2#sub{
   text-align: center;
-  font-family: Arial;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 15pt;
   color: black;
 }
@@ -52,7 +138,11 @@ p{
   font-size: 15pt; 
   color: black;
 }
-p#copy{
+footer{
+    border-top: 1px solid #606060;
+}
+footer p{
+  font-size: 12pt;
   text-align: center;
   font-family: times-newroman;
 }
@@ -66,11 +156,11 @@ figure.minhafoto img{
   left: 10px;
 }
 ul#linkes{
-  list-style: none;
-  display: block;
-  position: absolute;
-  top: -10px;
-  left: 900px;
+    text-align: center;
+    list-style: none;
+    display: block;
+    padding: 10px;
+    margin: 2px;
 }
 ul#linkes li{
   text-decoration: none;
@@ -101,10 +191,38 @@ ul#habilidades li{
   transition: opacity 1s;
 }
 ul#habilidades li:hover{
-  /*text-transform: uppercase;*/
   font-size: 15pt;
   opacity: 1;
 }
 ul#idioma{
   list-style: square;
+}
+ul#css{
+    list-style: none;
+    display: block;
+    padding: 10px;
+    margin: 2px;
+    text-align: center;
+}
+ul#css li{
+    font-family: Arial,sans-serif;
+    font-size: 10pt;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+    opacity: 0.6;
+    background-color: #dddddd;
+    transition: opacity 1s;
+}
+ul#css li:hover{
+    background-color: #606060;
+    opacity: 1;
+    font-size: 12pt;
+}
+ul#css a{
+    color: black;
+}
+ul#css a:hover{
+    color: white;
 }
