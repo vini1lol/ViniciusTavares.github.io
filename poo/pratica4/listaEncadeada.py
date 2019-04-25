@@ -39,7 +39,11 @@ class Encadeada:
                     self._tail=c
                     self._tail.proximo = None
             else:
-                self._head = self._head.proxima
+                if self._quantidade == 1:
+                    self._head = None
+                    self._tail = None
+                else:
+                    self._head = self._head.proxima
                 
             self._quantidade-=1
     def imprime(self):
@@ -69,16 +73,7 @@ class Encadeada:
 if __name__=="__main__":
     b = Encadeada()
     b.insere("a")
-    b.insere("b")
-    b.insere("c")
-    b.insere("d")
     b.imprime()
-    b.remove(3)
+    b.remove(0)
     b.imprime()
-    b.copia().imprime()
-    l = Encadeada()
-    l.insere("d")
-    l.insere(12)
-    l.insere("ahkbs")
-    b.concatena(l)
-    b.imprime()
+   
