@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { FlatList, Text, StyleSheet } from 'react-native';
+import { FlatList, Text, StyleSheet, View } from 'react-native';
 
-import firebase from 'react-native-firebase';
+import firestore from '@react-native-firebase/firestore';
 
 const extractKey = ({ id }) => id
 
@@ -15,19 +15,33 @@ export default class Home extends Component {
     }
 
     componentDidMount() {
-        firebase.firestore().collection("banco").get()
+        this.getLivros()
+    }
+
+    getLivros = () => {
+        firestore().collection("livros").get()
             .then((querySnapshot) => {
+                let livros = []
                 querySnapshot.forEach((doc) => {
-                    this.setState({livros: doc.data().livros})
+                    livros.push({ id: doc.id, ...doc.data() })
                 });
+                this.setState({ livros: livros })
             })
     }
 
     renderItem = ({ item }) => {
         return (
-            <Text style={styles.row}>
-                {item.nome}
-            </Text>
+            <View style={styles.vi}>
+                <Text >
+                    Nome: {item.nome}
+                </Text>
+                <Text >
+                    Autor: {item.autor}
+                </Text>
+                <Text>
+                    Telefone: {item.telefone}
+                </Text>
+            </View>
         )
     }
 
@@ -45,11 +59,13 @@ export default class Home extends Component {
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
+        flex: 1,
     },
-    row: {
-      padding: 15,
-      marginBottom: 5,
-      backgroundColor: 'skyblue',
+    vi: {
+        padding: 15,
+        marginBottom: 5,
+        marginTop: 5,
+        marginHorizontal: 20,
+        backgroundColor: 'skyblue',
     },
-  })
+})
