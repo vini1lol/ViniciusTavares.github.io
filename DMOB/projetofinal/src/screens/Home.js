@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FlatList, Text, StyleSheet, View } from 'react-native';
 
-import firestore from '@react-native-firebase/firestore';
+import firebase from 'react-native-firebase';
 
 const extractKey = ({ id }) => id
 
@@ -19,7 +19,7 @@ export default class Home extends Component {
     }
 
     getLivros = () => {
-        firestore().collection("livros").get()
+        firebase.firestore().collection("livros").get()
             .then((querySnapshot) => {
                 let livros = []
                 querySnapshot.forEach((doc) => {

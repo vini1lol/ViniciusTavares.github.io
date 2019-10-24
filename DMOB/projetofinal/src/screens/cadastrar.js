@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextInput, Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
-import firestore from '@react-native-firebase/firestore';
+import firebase from 'react-native-firebase';
 
 
 class Cadastrar extends React.Component {
@@ -11,8 +11,8 @@ class Cadastrar extends React.Component {
     autor: "",
     numero: "",
   }
-  onpress = () => {
-    firestore().collection("livros").add({
+  onpress() {
+    firebase.firestore().collection("livros").add({
       nome: this.state.nome,
       autor: this.state.autor,
       telefone: this.state.numero
@@ -24,12 +24,18 @@ class Cadastrar extends React.Component {
     return (
       <View style={{ flex: 1 }}>
         <Text>Nome:</Text>
-        <TextInput style={styles.texto} placeholder="nome do livro" onChangeText={text => this.setState({ nome: text })} value={this.state.nome} />
+
+        <TextInput style={styles.texto} placeholder='nome do livro' onChangeText={(text) => this.setState({ nome: text })} value={this.state.nome}></TextInput>
+
         <Text>Autor:</Text>
-        <TextInput style={styles.texto} placeholder="autor" onChangeText={text => this.setState({ autor: text })} value={this.state.autor} />
-        <Text> Telefone:</Text>
-        <TextInput style={styles.texto} placeholder="+5584999999999" onChangeText={text => this.setState({ numero: text })} value={this.state.numero} />
-        <TouchableOpacity onpress={this.onpress}> Cadastrar</TouchableOpacity>
+
+        <TextInput style={styles.texto} placeholder='autor' onChangeText={(text) => this.setState({ autor: text })} value={this.state.autor}></TextInput>
+
+        <Text>Telefone:</Text>
+
+        <TextInput style={styles.texto} placeholder='+5584999999999' onChangeText={(text) => this.setState({ numero: text })} value={this.state.numero} ></TextInput>
+
+        <TouchableOpacity onpress={this.onpress}><Text>Cadastrar</Text></TouchableOpacity>
       </View>
     )
   }
